@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capture Form</title>
 </head>
-<body >
+
+<body>
     <h1>Captcha Form</h1>
- <form>
-    <label for="name">Your Name:</label>
-    <input placeholder="Enter your name" id="name" type="text">
-    <br>
-    <input type="submit">
-    <input type="reset" value=" cancel">
- </form>
+    <center>
+    <form>
+
+        <label for="name">Your Name:</label>
+        <input placeholder="Enter your name" id="name" type="text" name="gaurav">
+        <br>
+        <br>
+        <label for="username">Username: <span style="color: red;">*</span></label>
+        <input type="text" placeholder="Enter user name:" name="username" id="username" required>
+        <br>
+        <br>
+        <label for="email">Email: <span style="color: red;">*</span></label>
+        <input type="email" id="email" placeholder="Enter your email" name="email" required>
+        <br>
+        <br>
+        <label for="password">Password: <span style="color: red;">*</span></label>
+        <input type="password" id="password" placeholder="Enter your password" name="password" required>
+        <br>
+        <br>
+        <input type="submit">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="reset" value=" cancel">
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" placeholder="Enter your age" name="age" id="age" min="1" max="100">
+        <br>
+        <br>
+        <button type="button">Click Me</button>
+    </form>
+    </center>
 </body>
+
 </html>
