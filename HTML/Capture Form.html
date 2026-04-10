@@ -9,29 +9,33 @@
 
 <body>
     <h1>Captcha Form</h1>
-    <center>
     <form>
-
+     <fieldset>
+        <legend>Personal Information</legend>
         <label for="name">Your Name:</label>
         <input placeholder="Enter your name" id="name" type="text" name="gaurav">
         <br>
         <br>
         <label for="username">Username: <span style="color: red;">*</span></label>
-        <input type="text" placeholder="Enter user name:" name="username" id="username" required>
+        <input type="text" placeholder="Enter user name:" name="username" id="username" >
         <br>
         <br>
         <label for="email">Email: <span style="color: red;">*</span></label>
-        <input type="email" id="email" placeholder="Enter your email" name="email" required>
+        <input type="email" id="email" placeholder="Enter your email" name="email" >
         <br>
         <br>
         <label for="password">Password: <span style="color: red;">*</span></label>
-        <input type="password" id="password" placeholder="Enter your password" name="password" required>
+        <input type="password" id="password" placeholder="Enter your password" name="password" >
         <br>
         <br>
         <input type="submit">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <input type="reset" value=" cancel">
+        </fieldset>
         <br>
+        <br>
+        <fieldset>
+            <legend>Additional Information</legend>
         <br>
         <label for="age">Age:</label>
         <input type="number" placeholder="Enter your age" name="age" id="age" min="1" max="100">
@@ -80,7 +84,14 @@
         <button type="button">Click Me</button>
         <br>
         <br>
+</fieldset>
 
+
+<br>
+<br>
+<fieldset>
+        <legend>Terms and Conditions</legend>
+    <br>
         <label> <input type="checkbox" id="terms1" name="terms1"> I agree to the terms and conditions</label>
         <br>
         <label> <input type="checkbox" id="terms2" name="terms2"> I don't agree to the terms and conditions</label>
@@ -97,8 +108,26 @@
 
         <label>Not allowd:</label>
         <input type="hidden" placeholder="you are not allowed">
+        <br>
+        <br>
+        <br>
+        <br>
+ <label for="tech">Choose a technology:</label>
+        <select name="tech" id="tech" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+        <br>
+        <br>
+        <br>
+<label for="textarea">Comments:</label>
+        <textarea name="comments" id="textarea" placeholder="Enter comments.... " rows="4" cols="30"></textarea>
+        <br>
+        <br>
+        </fieldset>
     </form>
-    </center>
+    
 </body>
 
 </html>
