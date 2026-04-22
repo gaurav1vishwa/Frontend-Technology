@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element</title>
+    <style>
+        p::before {
+            content: "Goodmorning! ";
+            color: red;
+        }
+
+        /* ::beforeInserts content before an element's content
+        ::afterInserts content after an element' s content
+        ::first-lineStyles the first line of a block element
+        ::first-letterStyles the first letter of a block element
+        ::selectionStyles the portion of text selected by user
+        ::placeholderStyles placeholder text in input/textarea
+        ::markerStyles list item markers (bullets/numbers)
+        ::backdropStyles the backdrop behind a <dialog>element
+        ::spelling-errorStyles text flagged as a spelling error
+        ::grammar-errorStyles text flagged as a grammar error
+        ::cueStyles WebVTT cues (subtitles/captions)
+        ::file-selector-buttonStyles the button in <input type="file">
+        ::slotted()Styles slotted elements in Shadow DOM
+        ::part() */
+    </style>
+</head>
+
+<body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>This is a third paragraph.</p>
+    <p>This is a fourth paragraph.</p>
+
+</body>
+
+</html>
