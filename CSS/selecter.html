@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* element selector */
+        h1{
+            color: red;
+        }
+        /* class selector */
+        .lorem2{
+            color: green;
+        }
+        /* id selector */
+        #lorem4{
+            color: blue;
+        }
+         /* universal selector */
+         *{
+            font-family: Arial, Helvetica, sans-serif;
+         }
+          /* important selector */
+          h3{
+              /* it will override all the other selector of h3 */
+            color: yellow !important;
+           
+          }
+           /* group selector */
+           h5, h6{
+            color: purple;
+           }
+           h3{
+            color: orange;
+           }
+    </style>
+</head>
+<body>
+
+    <!-- this is the priority of css selector
+    !important > Inline > ID > Class > Element > * -->
+
+    <h1 id="lorem1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, enim!</h1>
+    <h2 class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, commodi!</h2>
+    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, perferendis.</h3>
+    <h4 id="lorem4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, perferendis?</h4>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corrupti.</h5>
+    <h6 class="lorem6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, dicta!</h6>
+</body>
+</html>
