@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <style>
+        div.static {
+            position: static;
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        div.relative {
+            position: relative;
+            background-color: lightcoral;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            text-align: center;
+            left: 200px;
+            /* Moves the element to the right by 20px */
+            bottom: 50px;
+            /* Moves the element up by 50px */
+        }
+
+        div.parent {
+            position: relative;
+            background-color: rgb(117, 45, 45);
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            /* left: 100px; */
+        }
+
+        div.absolute {
+            position: absolute;
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            /* Moves the element down by 50px */
+            left: 50px;
+            /* Moves the element to the right by 50px */
+            text-align: center;
+        }
+
+        div.fixed {
+            position: fixed;
+            background-color: rgb(146, 146, 69);
+            width: 50px;
+            height: 50px;
+            bottom: 0px;
+            /* Sticks the element to the bottom of the viewport */
+            right: 0px;
+            /* Sticks the element to the right of the viewport */
+            margin: 10px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        div.sticky {
+            position: sticky;
+            background-color: rgb(74, 173, 119);
+            width: 100%;
+            height: 40px;
+            top: 0px;
+            /* Sticks the element to the top of the viewport when you scroll down */
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- static positioning   default value
+    relative positioning  (top, bottom, left, right)
+    absolute positioning  
+    fixed positioning
+    sticky positioning
+    z-index arranges the div order as we want  -->
+
+    <div class="static">Static Positioning</div>
+
+    <div class="relative">Relative Positioning</div>
+
+    <div class="parent">
+        <div class="absolute">Absolute Positioning</div>
+    </div>
+
+    <div class="fixed">Fixed positioning</div>
+
+    <div class="sticky">Sticky positioning</div>
+    <div class="box">
+        <p>This is a simple box with some content.</p>
+        <p>It demonstrates the use of different CSS position properties.</p>
+        <p>Scroll down to see the sticky element in action.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        <p>This is a simple box with some content.</p>
+        <p>It demonstrates the use of different CSS position properties.</p>
+        <p>Scroll down to see the sticky element in action.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        <p>This is a simple box with some content.</p>
+        <p>It demonstrates the use of different CSS position properties.</p>
+        <p>Scroll down to see the sticky element in action.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        <p>This is a simple box with some content.</p>
+        <p>It demonstrates the use of different CSS position properties.</p>
+        <p>Scroll down to see the sticky element in action.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+    </div>
+</body>
+
+</html>
