@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            border: 2px solid black;
+        }
+
+        .black-box {
+            background-color: black;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .grey-box {
+            position: absolute;
+            background-color: lightgray;
+            height: 60px;
+            width: 70%;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+
+        .green-box {
+            position: absolute;
+            background-color: green;
+            width: 35%;
+            height: 100px;
+            top: -15px;
+            left: 270px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="black-box box">black box</div>
+        <div class="grey-box box"> grey box</div>
+        <div class="green-box box">green box</div>
+    </div>
+</body>
+</html>
