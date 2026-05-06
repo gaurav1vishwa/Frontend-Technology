@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: 50px;
+            border: 1px solid black;
+            position: relative;
+            left: 100px;
+            top: 100px;
+            /* Applying a transformation to the element */
+            /* its not take the browser width and height its take the element width and height */
+        }
+
+        .box:hover {
+            /* transform: translate(100%,100%);  
+            transform: translate(500px, 200px);    */
+            /* transform: scale(2);  */
+            /* transform: rotate(370deg); */
+            /* transform: skew(-20deg, -20deg); */
+            transform-origin: top right;
+             transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
