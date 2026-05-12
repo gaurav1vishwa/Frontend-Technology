@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animations </title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            animation-name: colorAnimation;
+            animation-name: heading;
+            animation-duration: 10s;
+            animation-delay: 5s;
+            animation-timing-function:linear;
+         
+        }
+        p{
+            animation-name: slidingtext;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+        }
+
+        /* @keyframes colorAnimation {
+            from{
+                background-color: pink;
+                color: black;
+            }
+            to {
+                background-color: red;
+                color: white;
+            }
+
+        } */
+
+
+        /* @keyframes  colorAnimation {
+            0% {
+                background-color: pink;
+                color: black;
+            }
+            50% {
+                background-color: red;
+                color: white;
+            }
+            100% {
+                background-color: blue;
+                color: yellow;
+            }
+        } */
+
+
+        @keyframes heading {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+             100% {
+                opacity: 0;
+            }
+        }
+
+
+        @keyframes slidingtext {
+            0% {
+                transform: translateX(-100%);
+            }
+            
+             100% {
+                transform: translateX(100%);
+            }
+        }
+           </style>
+</head>
+
+<body>
+    <h1>hey i am gonna use the animation</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam cumque a est officia obcaecati facilis
+        odio similique exercitationem quisquam.</p>
+</body>
+
+</html>
