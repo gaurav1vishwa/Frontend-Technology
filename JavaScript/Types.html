@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding JavaScript</title>
+    <!-- <script defer>
+        // always used te defer when you want to use  js in outside the body
+    
+    </script> -->
+</head>
+
+<body>
+
+    <h1>Adding JavaScript</h1>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+
+        document.write("Hello, World!<br>"); // its visible on the webpage
+
+        console.log("This is a message in the console.");  // its only visible in the console
+
+        let button = document.getElementById("btn");  // selecting the button element by its id
+
+        button.addEventListener("click", function() {     // use addEventListener to attach a click event listener to the button
+            alert("Button was clicked!");
+        });
+
+    </script>
+
+</body>
+</html>
