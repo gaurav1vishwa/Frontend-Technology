@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adding JavaScript</title>
+
     <!-- <script defer>
         // always used te defer when you want to use  js in outside the body
     
     </script> -->
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 
 <body>
 
@@ -16,11 +26,14 @@
 
     <button id="btn">Click Me</button>
 
+    <div id="box" class="box"></div>
+
     <script>
 
         document.write("Hello, World!<br>"); // its visible on the webpage
 
         console.log("This is a message in the console.");  // its only visible in the console
+
 
         let button = document.getElementById("btn");  // selecting the button element by its id
 
@@ -29,6 +42,7 @@
         });
 
     </script>
+         <script src="script.js"></script><!-- this is how you can link an external JavaScript file -->
 
 </body>
 </html>
