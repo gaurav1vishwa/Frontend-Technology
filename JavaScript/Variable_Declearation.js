@@ -76,3 +76,16 @@ function letConstTest() {
 }   
 
 letConstTest();
+
+
+
+// variable declaration rules in JavaScript
+// 1. Variable names must begin with a letter, underscore (_) or dollar sign ($).
+// 2. Variable names can contain letters, digits, underscores, and dollar signs.
+// 3. Variable names are case-sensitive.
+// 4. Variable names cannot be reserved keywords in JavaScript.2
+
+let stu_age = 20;
+let Stu_age = 25;
+console.log(stu_age);
+let $salary = 50000;
